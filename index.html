@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shakes Theory - a cozy cafe serving handcrafted shakes, coffee, snacks, and sweet moments." />
+  <title>Shakes Theory | Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="logo" href="#home">Shakes Theory</a>
+      <div class="nav-links">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#visit">Visit</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Fresh • Creamy • Handcrafted</p>
+        <h1>Where every shake has a story.</h1>
+        <p class="hero-text">
+          Welcome to Shakes Theory — your neighborhood spot for indulgent shakes,
+          comforting coffee, delicious bites, and good conversations.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#menu">View Menu</a>
+          <a class="button secondary" href="#visit">Find Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">Customer favorites</p>
+        <h2>Our Menu Highlights</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <span class="card-icon">🥤</span>
+          <h3>Signature Shakes</h3>
+          <p>Classic chocolate, strawberry, Oreo, butterscotch, and seasonal specials.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon">☕</span>
+          <h3>Coffee & Coolers</h3>
+          <p>Hot coffee, cold coffee, iced beverages, and refreshing coolers.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon">🍔</span>
+          <h3>Quick Bites</h3>
+          <p>Sandwiches, fries, burgers, and cafe-style snacks made for sharing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About us</p>
+          <h2>A cozy cafe built around flavor and fun.</h2>
+        </div>
+        <p>
+          At Shakes Theory, we believe a great cafe is more than a menu — it is a place
+          to pause, meet friends, celebrate small wins, and enjoy something delicious.
+          Drop in for a shake, stay for the vibe.
+        </p>
+      </div>
+    </section>
+
+    <section id="visit" class="section container visit">
+      <div class="section-heading">
+        <p class="eyebrow">Come over</p>
+        <h2>Visit Shakes Theory</h2>
+      </div>
+
+      <div class="visit-card">
+        <div>
+          <h3>Opening Hours</h3>
+          <p>Monday – Sunday</p>
+          <p>10:00 AM – 11:00 PM</p>
+        </div>
+        <div>
+          <h3>Location</h3>
+          <p>Add cafe address here</p>
+          <a href="https://maps.google.com" target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>Phone: +91 XXXXX XXXXX</p>
+          <p>Instagram: @shakestheory</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Shakes Theory. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
