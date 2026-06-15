@@ -333,6 +333,151 @@ h3 {
   margin: 0;
 }
 
+/* For Sale section */
+.nav-sale {
+  color: var(--berry) !important;
+  font-weight: 700;
+}
+
+.sale {
+  background: linear-gradient(135deg, #1f130e 0%, #3b2418 100%);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.sale-banner {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 48px;
+}
+
+.sale-badge {
+  display: inline-block;
+  margin: 0 0 16px;
+  padding: 6px 18px;
+  border-radius: 999px;
+  background: var(--berry);
+  color: var(--white);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.sale-banner h2 {
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.sale-intro {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.sale-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.sale-gallery-item {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.sale-gallery-item:hover {
+  transform: scale(1.02);
+  border-color: var(--berry);
+}
+
+.sale-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sale-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 48px;
+}
+
+.sale-card {
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.sale-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.sale-icon {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 2rem;
+}
+
+.sale-card h3 {
+  color: var(--white);
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.sale-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.sale-includes {
+  text-align: center;
+  padding: 36px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+}
+
+.sale-includes h3 {
+  color: var(--white);
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+}
+
+.sale-includes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.sale-includes li {
+  padding: 8px 18px;
+  background: rgba(216, 91, 127, 0.18);
+  border: 1px solid rgba(216, 91, 127, 0.3);
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.sale-includes .button.primary {
+  background: var(--berry);
+  box-shadow: 0 12px 30px rgba(216, 91, 127, 0.3);
+}
+
 @media (max-width: 760px) {
   .nav {
     min-height: 84px;
@@ -358,7 +503,9 @@ h3 {
 
   .cards,
   .about-grid,
-  .visit-card {
+  .visit-card,
+  .sale-grid,
+  .sale-gallery {
     grid-template-columns: 1fr;
   }
 }
